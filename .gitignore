@@ -1,0 +1,18 @@
+# Python executables
+*.pyc
+__pycache__
+
+# Mac folders
+.DS_Store
+
+# VScode properties
+.vscode
+
+# JetBrains IDE properties
+.idea
+
+# Python building stuff
+.Python
+build/
+dist/
+*.egg-info/
