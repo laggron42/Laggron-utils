@@ -73,9 +73,3 @@ def init_logger(log: logging.Logger, cog_name: str, package_name: Optional[str] 
         file_handler.setLevel(logging.DEBUG)
         file_handler.setFormatter(formatter)
         log.addHandler(file_handler)
-
-
-def close_logger(log: logging.Logger):
-    for handler in log.handlers:
-        handler.close()
-    log.handlers = []
