@@ -5,7 +5,7 @@ from redbot.logging import RotatingFileHandler
 
 from typing import Optional
 
-__all__ = ["DisabledConsoleOutput", "init_logger"]
+__all__ = ["DisabledConsoleOutput", "init_logger", "close_logger"]
 
 
 class DisabledConsoleOutput:
