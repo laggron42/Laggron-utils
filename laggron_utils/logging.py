@@ -1,6 +1,9 @@
 import logging
 
-from redbot.core.data_manager import cog_data_path
+try:
+    from redbot.core.data_manager import cog_data_path
+except RuntimeError:
+    pass  # running sphinx-build raises an error when importing this module
 from redbot.logging import RotatingFileHandler
 
 from typing import Optional
